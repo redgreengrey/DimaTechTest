@@ -2,7 +2,7 @@
   <div class="logo">
     <div v-if="window.width > 980" class="big">
         <div class="eclipse">
-            <img src="/img/logoBig.png" />
+            <img src="/img/logoBig.png" class="img" />
         </div>
     </div>
     <div v-else class="small">
@@ -52,4 +52,11 @@ methods: {
   margin-top: 20px;
 }
 
+.img {
+    margin-top: 10px;
+}
+
+.big {
+    margin-top: -35px;
+}
 </style>
