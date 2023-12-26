@@ -7,34 +7,39 @@
     </div>
 
     <Tabs class="tabs">
-      <Tab name="роллы">
-      </Tab>
-      <Tab name="суши и гунканы">
-      </Tab>
-      <Tab name="сеты">
-      </Tab>
+      <Tab name="роллы"> </Tab>
+      <Tab name="суши и гунканы"> </Tab>
+      <Tab name="сеты"> </Tab>
       <Tab name="лапша и рис" :selected="true">
-        <h1>лапша и рис</h1>
+        <Card
+          :count="0"
+          rollName="РОЛЛ ЯСАЙ"
+          :img="'/img/ролл ясай 1.png'"
+          :isFavorite="false"
+          rollDesc="Огурец, авокадо, помидор, болгарский перец, листья салата, кунжут"
+          :price="200"
+          :weight="185"
+        />
       </Tab>
-      <Tab name="салаты">
-      </Tab>
-      <Tab name="горячие блюда">
-      </Tab>
+      <Tab name="салаты"> </Tab>
+      <Tab name="горячие блюда"> </Tab>
     </Tabs>
   </div>
 </template>
 
 <script>
-import Tabs from '~/components/Tabs/Tabs.vue'
-import Tab from '~/components/Tabs/Tab.vue'
+import Tabs from "~/components/Tabs/Tabs.vue";
+import Tab from "~/components/Tabs/Tab.vue";
+import Card from "~/components/Card.vue";
 
 export default {
-  name: 'IndexPage',
+  name: "IndexPage",
   components: {
     Tabs,
     Tab,
-  }
-}
+    Card,
+  },
+};
 </script>
 
 <style>

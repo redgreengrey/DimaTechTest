@@ -5,3 +5,11 @@
     font-display: swap;
     src: url('~assets/fonts/Neucha.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: medium;
+    font-weight: 500;
+    font-display: swap;
+    src: url('~assets/fonts/montserrat-medium.woff') format('woff');
+}
